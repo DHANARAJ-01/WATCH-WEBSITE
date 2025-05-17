@@ -1,0 +1,459 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pages{
+    overflow: hidden;
+}
+
+.top img{
+    height: 500px;
+    width: 100%;
+}
+
+.container header{
+    display: flex;
+    border-bottom: 2px solid rgb(223, 214, 214);
+    background-color: white;
+}
+
+.logo h2{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.container nav ul{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 15px;
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.container nav ul li{
+    margin-left: 45px;
+    
+}
+
+
+.container nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container nav ul li a:hover{
+    color: cornflowerblue;
+
+}
+
+/* Product Section */
+.container1 p{
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.product {
+    border: 1px solid rgb(229, 223, 223);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures space between content and button */
+    height: 380px; /* Fixed height for consistent button positioning */
+}
+
+
+.product img {
+    width: 200px;
+    height:200px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.product .product-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center; /* Ensures product name is centered */
+}
+
+.product .price {
+    font-size: 1.3rem;
+    color: #888;
+    margin-bottom: 15px;
+    text-align: center; /* Ensures price is centered */
+}
+
+.product button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: auto; /* Pushes the button to the bottom */
+    width: 100%; /* Makes button span the entire width of the product */
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+.title{
+    display: flex;
+}
+
+.title1 img{
+    height: 410px;
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.title2 p{
+    margin-top: 35px;
+    margin-left: 10%;
+    width: 600px;
+    font-size: 20px;
+}
+
+.picture img{
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.picture p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.container2 footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 20px;
+    padding-left: 15px;
+    height: 300px;
+    width: 100%;
+    
+}
+.container2 .box1 h2{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.container2 .box1 p{
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: justify;
+}
+.container2 .box2 h2{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 190px;
+}
+
+.container2 .box2 p{
+    margin-top: 10px;
+    margin-left: 60px;
+    text-align: justify;
+}
+.container2 .box3 h2{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.container2 .box3 p{
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.container2 .box h2{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.container2 .box p{
+    margin-top: 10px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.container2 .box4{
+    display: flex;
+    padding-top: 5px;
+    
+}
+.container2  .copy p{
+    margin-top: 80%;
+}
+
+@media(max-width:768px){
+    .top img{
+        
+        width: 100%;
+    }
+    
+    .container header{
+        display: inline-block;
+        border-bottom: 1px solid rgb(223, 214, 214);
+        background-color: black;
+        width: 100%;
+    }
+    
+    .logo h2{
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+    }
+    
+    .container nav ul{
+        display: block;
+        margin-left: -0px;
+        margin-top: 15px;
+        list-style: none;
+        padding-bottom: 15px;
+    }
+    
+    .container nav ul li{
+        margin-left: 50px;
+        margin-top: 15px;
+        
+    }
+    
+    
+    .container nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .container nav ul li a:hover{
+        color: cornflowerblue;
+    
+    }
+    
+    /* Product Section */
+    .container1 p{
+        margin-top: 15px;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    
+    .product {
+        border: 1px solid rgb(229, 223, 223);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures space between content and button */
+        height: 380px; /* Fixed height for consistent button positioning */
+    }
+    
+    
+    .product img {
+        width: 200px;
+        height:200px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        margin-left: 20px;
+    }
+    
+    .product .product-name {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: center; /* Ensures product name is centered */
+    }
+    
+    .product .price {
+        font-size: 1.3rem;
+        color: #888;
+        margin-bottom: 15px;
+        text-align: center; /* Ensures price is centered */
+    }
+    
+    .product button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: auto; /* Pushes the button to the bottom */
+        width: 100%; /* Makes button span the entire width of the product */
+    }
+    
+    .product button:hover {
+        background-color: #555;
+    }
+    
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .title1 img{
+        height: 410px;
+        width: 500px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    .title2 p{
+        margin-top: 35px;
+        margin-left: 1%;
+        width: 420px;
+        font-size: 20px;
+    }
+    
+    .picture img{
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .picture p{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    
+    .container2 footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-left: 10px;
+        height: 650px;
+        width: 100%;
+        
+    }
+    .container2 .box1 h2{
+        margin-top: 10px;
+        font-size: 22px;
+        width: 130px;
+    }
+    
+    .container2 .box1 p{
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .container2 .box2 h2{
+        margin-top: 10px;
+        font-size: 22px;
+        width: 130px;
+    }
+    
+    .container2 .box2 p{
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .container2 .box3 h2{
+        margin-top: 10px;
+        font-size: 22px;
+        width: 130px;
+    }
+    
+    .container2 .box3 p{
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    
+    .container2 .box h2{
+        margin-top: 10px;
+        font-size: 22px;
+        width: 130px;
+    }
+    
+    .container2 .box p{
+        margin-top: 15px;
+        margin-left: 20px;
+        font-size: 20px;
+        text-align: justify;
+    }
+    
+    .container2 .box4{
+        display: flex;
+        padding-top: 5px;
+        gap: 5px;
+        
+    }
+    .container2  .copy p{
+        margin-top: 10%;
+        margin-bottom: 15px;
+        width: 380px;
+        font-size: 18px;
+    
+    }
+    .pages{
+    overflow: hidden;
+    }
+
+}
